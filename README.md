@@ -6,7 +6,7 @@ A tool for scraping public telegram channels, downloads all messages, media file
 Features
 --------
 
-- Scraping complete public channel content
+- scraping complete public channel content
 - Download all messages with timestamps and view counts
 - Save images and video thumbnails locally
 - Extract channel metadata (subscribers, media counts)
@@ -26,30 +26,30 @@ pip install -r requirements.txt
 Usage
 -----
 
-Scraping a single channel:
+scraping a single channel:
 
 python3 main.py -c name -m 100
 
-Scraping multiple channels from file:
+scraping multiple channels from file
 
-Create a file named groups.txt with one channel per line
+create a file named groups.txt with one channel per line
 
-Example:
+exemple
 telegram
 etcetc name
 
-Then run:
+Then run
 
 python3 main.py -t groups.txt -m 200
 
 Command line options:
 
--c, --channel    single channel username (without @)
--t, --targets    file containing list of channels
--m, --max        maximum messages to scrape
--d, --delay      delay between requests in seconds
--p, --proxy      proxy file for requests
--o, --output     custom output folder name
+-c, --channel single channel username (without @)
+-t, --targets file containing list of channels
+-m, --max maximum messages to scrape
+-d, --delay delay between requests in seconds
+-p, --proxy proxy file for requests
+-o, --output custom output folder name
 
 Using proxies:
 
@@ -58,7 +58,7 @@ Create a proxies.txt file with one proxy per line
 0.1.2.3:8080
 1.2.3.4:3128:username:pwd
 
-Then run with proxy support:
+Then run with proxy support
 
 python3 main.py -c name -p proxies.txt
 
@@ -75,29 +75,28 @@ Rate Limiting
 
 Telegram may temporarily block IP addresses that send too many requests.
 
-The tool includes:
+The tool includes
 
-- Configurable delays between requests
-- Automatic retry on rate limit responses
-- Proxy rotation support for large archives
+ configurable delays between requests
+ automatic retry on rate limit responses
+ proxy rotation support for large archives
 
-For scraping large channels (1000+ messages), it is recommended next:
+For scraping large channels (1000+ messages), it is recommended next
 
-1. Use delays of 2-3 seconds between requests
+1. use delays of 2 3 seconds between requests
 2. Use rotating proxies for multiple channels
 
 Disclaimer
 ----------
 
-This tool is for educational purposes and personal scraping of content you have permission to access.
+This tool is for educational purposes and personal scraping of content you have permission to access
 
-Respect Telegram's Terms of Service and the intellectual property rights of channel owners.
+ Respect telegram's terms of service and the intellectual property rights of channel owners
+ Do not use this tool for harassment, spam, or any malicious purpose
 
-Do not use this tool for harassment, spam, or any malicious purpose.
+The author is not responsible for how this script is used
 
-The author is not responsible for how this script is used.
-
-By using this tool, you agree that you will comply with all applicable laws and regulations.
+By using this tool, you agree that you will comply with all applicable laws and regulations
 
 License
 -------
