@@ -104,7 +104,7 @@ def process_channel(channel, proxy, max_messages, delay, output_base=None):
         print(f'{Fore.GREEN}[+] Created: {creation_date}')
         channel_info['creation_date'] = creation_date
     
-    print(f'{Fore.CYAN}[+] Scraping messages... (this may take a while)')
+    print(f'{Fore.CYAN}[+] Scraping messages...')
     
     messages = scrape_channel(
         channel,
