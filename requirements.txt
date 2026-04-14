@@ -1,0 +1,4 @@
+curl_cffi>=0.5.0
+beautifulsoup4>=4.11.0
+colorama>=0.4.5
+langdetect>=1.0.9
