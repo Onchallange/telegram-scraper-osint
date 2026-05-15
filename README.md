@@ -1,5 +1,14 @@
 # Telegram Channel Scraper
 
+### **DISCLAIMER**
+
+> This tool was created for educational purposes and security research only  
+> Do not use it on accounts you do not own or have explicit permission to test  
+> Using this tool against telegram's servers violates their terms of service  
+> The author is not responsible for any misuse or damage caused by this tool  
+> **You have been warned**
+
+
 A tool for scraping public telegram channels, downloads all messages, media files, and channel metadata for offline viewing and analysis
 
 ## Features
